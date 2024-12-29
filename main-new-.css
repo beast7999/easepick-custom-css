@@ -2,7 +2,7 @@
   --color-bg-default: #fff;
   --color-bg-secondary: #f9f9f9;
   --color-fg-default: #333;
-  --color-fg-primary: #1A3129;
+  --color-fg-primary: #fff;
   --color-fg-secondary: #748194;
   --color-fg-selected: #fff;
   --color-fg-muted: #9e9e9e;
@@ -27,7 +27,7 @@
   --color-btn-secondary-disabled-border: #b5bbc4;
   --color-border-default: #ddd;
   --color-border-locked: #f9f9f9;
-  --color-bg-inrange: #1A3129; /* Custom background color for in-range selection */
+  --color-bg-inrange: #749B8E; /* Custom background color for in-range selection */
   --day-width: 42px;
   --day-height: 37px;
   --border-radius: 0px;
