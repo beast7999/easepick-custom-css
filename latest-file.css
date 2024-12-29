@@ -1,8 +1,7 @@
 :host {
   --color-bg-default: #fff;
-  --color-bg-secondary: #fff;
+  --color-bg-secondary: #f9f9f9;
   --color-fg-default: #333;
---color-bg-inrange: #417764;
   --color-fg-primary: #1A3129;
   --color-fg-secondary: #748194;
   --color-fg-selected: #fff;
@@ -27,39 +26,13 @@
   --color-btn-secondary-disabled-fg: #fff;
   --color-btn-secondary-disabled-border: #b5bbc4;
   --color-border-default: #ddd;
+  --color-border-locked: #f9f9f9;
+  --color-bg-inrange: #41776; /* Added custom background color for in-range selection */
   --day-width: 42px;
   --day-height: 37px;
-  --border-radius: 0; /* Flat corners */
-  --primary-color: #1A3129;
+  --border-radius: 0px;
 }
 
-.calendar > .days-grid > .day {
-  border: 1px solid transparent;
-  border-radius: var(--border-radius);
-  height: var(--day-height);
-  width: var(--day-width);
-  padding: 10px 0;
-  color: var(--color-fg-default);
-}
-
-.calendar > .days-grid > .day:hover {
-  border: 1px solid var(--color-fg-primary);
-  color: var(--color-fg-primary);
-}
-
-.calendar > .days-grid > .day.selected {
-  background-color: var(--color-fg-primary);
-  color: var(--color-fg-selected);
-}
-
-.calendar > .daynames-row > .dayname {
-  color: var(--color-fg-muted);
-}
-
-.container > main {
-  background-color: var(--color-bg-default);
-}
-
-.container > header, .container > footer {
-  background-color: var(--color-bg-secondary);
+.calendar > .days-grid > .day.inrange {
+  background-color: var(--color-bg-inrange); /* Apply in-range background color */
 }
